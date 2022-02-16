@@ -1,7 +1,7 @@
 <div class="container-fluid">
 <?php
 $CurrentTime = time(); 
-$CreationTime = $AccountInfo['account_time'] + (72*60*60);
+$CreationTime = $AccountInfo['account_time'] + (48*60*60);
 if($CurrentTime <= $CreationTime){
   echo '<div class="alert alert-secondary" role="alert"><h4 class="alert-heading">Don'."'".'t see your account yet?</h4>Your account is ready! Note that it can take up to 72 hours before everything is working properly!</div>';
 }
