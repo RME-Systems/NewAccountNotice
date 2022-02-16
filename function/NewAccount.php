@@ -30,8 +30,8 @@ if(isset($_POST['submit'])){
 			'password' => $FormData['password'],
 			'domain' => $FormData['domain'],
 			'email' => $FormData['email'],
-			'plan' => $FormData['plan']
-      'time' => time()
+			'plan' => $FormData['plan'],
+			'time' => time()
 			]);
 			$response = $request->send();
 			$Data = $response->getData();
